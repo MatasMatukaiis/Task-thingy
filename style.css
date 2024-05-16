@@ -1,0 +1,29 @@
+body {
+    background-color: #434343;
+    color: #ffffff;
+    font-size: 2vh;
+}
+p {
+    display: inline-block;
+}
+.item {
+    width: 40vh;
+    height: 1vh;
+    overflow: scroll;
+}
+ul {
+    background-color: #ffffff;
+    border: solid 2px #1b1b1b;
+    width: 100vh;
+    margin: 10vh auto auto auto;
+    height: fit-content;
+    color: #000000;
+    list-style-type: decimal;
+    overflow-wrap: break-word;
+    padding: 1vh 1vh 1vh 3vh;
+}
+button {
+    height: 2vh;
+    width: 3vh;
+    font-size: 1vh;
+}

@@ -1,14 +1,23 @@
-$(".button").click(function(){
-    var the_input_value = $(".item").val();
-    $("ul.thelist li:first-child").hide();
-    if (the_input_value == "") 
-    {
-        alert("Value cannot be null");
+document.querySelector(".button").addEventListener("click", () => {
+    let value = document.querySelector(".item").value;
+    if(value == " ") {
+        alert(">:(");
     }
-    else
-    {
-        var create_li = $("<li>"+the_input_value+"</li>");
-        $("ul.thelist").append(create_li);
-        $(".item").val("");
+    else {
+        document.querySelector(".thelist").innerHTML+="<li>"+value+"<input type='checkbox' class='lmao'></li>";
+        document.querySelector(".empty").style.display = "none";
+        document.querySelector(".item").value = " ";
     }
 });
+
+/*
+document.querySelector("li input").addEventListener("click", () => {
+    let li = document.querySelector("li");
+    if(li.style.textDecoration = "none") {
+        li.style.textDecoration = "line-through";
+    }
+    else {
+        li.style.textDecoration = "none";
+    }
+});
+*/
